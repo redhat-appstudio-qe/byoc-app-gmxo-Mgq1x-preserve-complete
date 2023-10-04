@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: wxhg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-icst-tenant/byoc-app-gmxo/wxhg@sha256:799f8cce90110c6f82f9a689fe64750a8b97de75e937016c59f143e4e7024f6e
+        name: my-java-quarkus
+        resources: {}
+status: {}
